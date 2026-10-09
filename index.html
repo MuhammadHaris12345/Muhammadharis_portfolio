@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad Haris — Portfolio</title>
+    <title>Muhammad Haris — Full‑Stack & AI Portfolio</title>
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
@@ -628,102 +628,6 @@
             font-size: 0.9rem;
         }
 
-        /* ===== CAROUSEL ===== */
-        .carousel-section {
-            background: rgba(255, 255, 255, 0.02);
-            border-top: 1px solid var(--glass-border);
-            border-bottom: 1px solid var(--glass-border);
-        }
-        .carousel-wrap {
-            position: relative;
-            overflow: hidden;
-            border-radius: var(--radius);
-            margin-top: 40px;
-            border: 1px solid var(--glass-border);
-        }
-        .carousel-track {
-            display: flex;
-            transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-        .carousel-slide {
-            min-width: 100%;
-            padding: 40px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            background: var(--bg-card);
-            backdrop-filter: blur(4px);
-        }
-        .carousel-slide .carousel-img {
-            height: 260px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, rgba(108, 59, 241, 0.12), rgba(249, 115, 22, 0.08));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--primary);
-            border: 1px solid var(--glass-border);
-        }
-        .carousel-slide .carousel-content h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .carousel-slide .carousel-content p {
-            color: var(--text-muted);
-        }
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: var(--bg-card);
-            backdrop-filter: blur(12px);
-            border: 1px solid var(--glass-border);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-light);
-            font-size: 1.2rem;
-            cursor: pointer;
-            z-index: 5;
-            transition: var(--transition);
-        }
-        .carousel-btn:hover {
-            background: var(--primary);
-            border-color: var(--primary);
-            transform: translateY(-50%) scale(1.05);
-        }
-        .carousel-btn--prev {
-            left: 16px;
-        }
-        .carousel-btn--next {
-            right: 16px;
-        }
-        .carousel-dots {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .carousel-dots span {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        .carousel-dots span.active {
-            background: var(--primary);
-            width: 30px;
-            border-radius: 10px;
-        }
-
         /* ===== CERTIFICATIONS ===== */
         .certs-grid {
             display: grid;
@@ -878,6 +782,14 @@
         .footer-bottom span {
             color: var(--secondary);
         }
+        .footer-bottom a {
+            color: var(--primary);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .footer-bottom a:hover {
+            color: var(--secondary);
+        }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
@@ -905,11 +817,6 @@
             .timeline-item {
                 grid-template-columns: 1fr;
                 gap: 8px;
-            }
-            .carousel-slide {
-                grid-template-columns: 1fr;
-                text-align: center;
-                padding: 28px;
             }
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -944,20 +851,6 @@
             .timeline-item {
                 padding: 20px;
             }
-            .carousel-slide {
-                padding: 20px;
-            }
-            .carousel-btn {
-                width: 38px;
-                height: 38px;
-                font-size: 0.9rem;
-            }
-            .carousel-btn--prev {
-                left: 6px;
-            }
-            .carousel-btn--next {
-                right: 6px;
-            }
             .section-title {
                 font-size: 1.8rem;
             }
@@ -980,14 +873,15 @@
             <div class="hero-grid">
                 <div class="hero-content reveal">
                     <div class="badge-row">
-                        <span><i class="fas fa-code"></i> Software Developer</span>
+                        <span><i class="fas fa-code"></i> Full‑Stack Developer</span>
+                        <span><i class="fas fa-brain"></i> AI & Data Science</span>
                         <span><i class="fas fa-chalkboard-teacher"></i> IT Trainer</span>
                     </div>
                     <h1>
                         Hi, I'm <br /><span class="highlight">Muhammad Haris</span>
                     </h1>
                     <p class="tagline">
-                        Building scalable web solutions &amp; teaching the next
+                        Building scalable web solutions, exploring AI, and teaching the next
                         generation of developers.
                     </p>
                     <div class="hero-actions">
@@ -1001,13 +895,13 @@
                 </div>
                 <div class="hero-image reveal">
                     <div class="avatar-wrap">
-                        <!-- Replace src with your actual photo -->
+                        <!-- Placeholder profile image; replace with your actual photo if desired -->
                         <img
-                        src="Harispic.png"
-                        alt="Muhammad Haris"
+                            src="https://ui-avatars.com/api/?name=Muhammad+Haris&size=400&background=6c3bf1&color=fff&bold=true&font-size=0.33"
+                            alt="Muhammad Haris"
                         />
                         <div class="floating-badge floating-badge--1">
-                            <i class="fas fa-check-circle"></i> 20+ Projects
+                            <i class="fas fa-check-circle"></i> 25+ Projects
                         </div>
                         <div class="floating-badge floating-badge--2">
                             <i class="fas fa-graduation-cap"></i> MCS
@@ -1023,18 +917,18 @@
         <div class="container">
             <div class="reveal">
                 <span class="section-label"><i class="fas fa-user"></i> About</span>
-                <h2 class="section-title">Passionate <span class="highlight">Developer</span> &amp; Educator</h2>
+                <h2 class="section-title">Passionate <span class="highlight">Developer</span> & Educator</h2>
                 <p class="section-subtitle">
-                    Blending software engineering with teaching to create impact.
+                    Blending software engineering with teaching & AI to create impact.
                 </p>
             </div>
             <div class="about-grid">
                 <div class="about-text reveal">
                     <p>
-                        I'm a Software Developer &amp; IT Professional based in Karachi,
+                        I'm a Full‑Stack Software Developer & IT Professional based in Karachi,
                         Pakistan. With a Master's in Computer Science, I specialize in
                         full‑stack web development, database architecture, and emerging
-                        technologies like AI &amp; Data Science.
+                        technologies like AI & Data Science.
                     </p>
                     <p>
                         Currently, I train students at Aptech Learning in C#, ASP.NET Core,
@@ -1048,7 +942,7 @@
                             <div class="label">Years Experience</div>
                         </div>
                         <div class="stat">
-                            <div class="number">20+</div>
+                            <div class="number">25+</div>
                             <div class="label">Projects Delivered</div>
                         </div>
                         <div class="stat">
@@ -1064,9 +958,9 @@
                         delightful to use.
                     </p>
                     <p>
-                        From student &amp; instalment management systems to creative apps like
+                        From student & instalment management systems to creative apps like
                         Baby Album Premium, I bring ideas to life with modern frameworks,
-                        clean UI/UX, and solid backends. I also explore AI &amp; Data Science
+                        clean UI/UX, and solid backends. I also explore AI & Data Science
                         to build smarter, more useful digital products.
                     </p>
                     <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px;">
@@ -1074,7 +968,7 @@
                             <i class="fas fa-check-circle" style="color: var(--accent);"></i> Full‑Stack
                         </span>
                         <span style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 6px 18px; border-radius: 40px; font-size: 0.8rem;">
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i> AI &amp; Data Science
+                            <i class="fas fa-check-circle" style="color: var(--accent);"></i> AI & Data Science
                         </span>
                         <span style="background: var(--bg-card); border: 1px solid var(--glass-border); padding: 6px 18px; border-radius: 40px; font-size: 0.8rem;">
                             <i class="fas fa-check-circle" style="color: var(--accent);"></i> Instructor
@@ -1092,7 +986,7 @@
                 <span class="section-label"><i class="fas fa-cog"></i> Expertise</span>
                 <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
                 <p class="section-subtitle">
-                    Technologies &amp; tools I work with daily.
+                    Technologies & tools I work with daily.
                 </p>
             </div>
             <div class="skills-grid">
@@ -1129,7 +1023,7 @@
                 <div class="skill-card reveal">
                     <div class="skill-header">
                         <i class="fas fa-tools"></i>
-                        <h4>Tools &amp; Platforms</h4>
+                        <h4>Tools & Platforms</h4>
                     </div>
                     <div class="skill-tags">
                         <span>Git</span><span>GitHub</span><span>Visual Studio</span>
@@ -1139,7 +1033,7 @@
                 <div class="skill-card reveal">
                     <div class="skill-header">
                         <i class="fas fa-brain"></i>
-                        <h4>AI &amp; Data Science</h4>
+                        <h4>AI & Data Science</h4>
                     </div>
                     <div class="skill-tags">
                         <span>Python</span><span>Data Analysis</span>
@@ -1179,19 +1073,19 @@
                         <div class="company">Aptech Learning, Karachi</div>
                         <ul>
                             <li><i class="fas fa-circle"></i> Full-stack training: C#, ASP.NET Core, PHP (Laravel), HTML/CSS/JS</li>
-                            <li><i class="fas fa-circle"></i> Supervising real-world software projects &amp; student portfolios</li>
-                            <li><i class="fas fa-circle"></i> Mentoring in clean code, databases, REST APIs &amp; deployment</li>
+                            <li><i class="fas fa-circle"></i> Supervising real-world software projects & student portfolios</li>
+                            <li><i class="fas fa-circle"></i> Mentoring in clean code, databases, REST APIs & deployment</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="time"><i class="far fa-calendar-alt"></i> 2024 – Present</div>
                     <div class="details">
-                        <h4>AI &amp; Data Science Learner / Practitioner</h4>
-                        <div class="company">SMIT &amp; Self-Directed</div>
+                        <h4>AI & Data Science Learner / Practitioner</h4>
+                        <div class="company">SMIT & Self-Directed</div>
                         <ul>
-                            <li><i class="fas fa-circle"></i> Python for data analysis, ML fundamentals &amp; AI concepts</li>
-                            <li><i class="fas fa-circle"></i> Exploring practical applications of AI in web &amp; education tools</li>
+                            <li><i class="fas fa-circle"></i> Python for data analysis, ML fundamentals & AI concepts</li>
+                            <li><i class="fas fa-circle"></i> Exploring practical applications of AI in web & education tools</li>
                             <li><i class="fas fa-circle"></i> Building foundation to integrate AI features into full-stack apps</li>
                         </ul>
                     </div>
@@ -1204,7 +1098,7 @@
                         <ul>
                             <li><i class="fas fa-circle"></i> Delivered lectures in CS / IT subjects</li>
                             <li><i class="fas fa-circle"></i> Designed curriculum per HEC guidelines</li>
-                            <li><i class="fas fa-circle"></i> Supervised Final Year Projects &amp; academic mentoring</li>
+                            <li><i class="fas fa-circle"></i> Supervised Final Year Projects & academic mentoring</li>
                         </ul>
                     </div>
                 </div>
@@ -1214,7 +1108,7 @@
                         <h4>Computer Science Instructor</h4>
                         <div class="company">Happy Palace Group of Schools</div>
                         <ul>
-                            <li><i class="fas fa-circle"></i> Delivered foundational programming &amp; CS training</li>
+                            <li><i class="fas fa-circle"></i> Delivered foundational programming & CS training</li>
                         </ul>
                     </div>
                 </div>
@@ -1229,12 +1123,12 @@
                 <span class="section-label"><i class="fas fa-folder-open"></i> Portfolio</span>
                 <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
                 <p class="section-subtitle">
-                    Full-stack web apps, management systems &amp; creative digital products.
+                    Full-stack web apps, management systems & creative digital products.
                 </p>
             </div>
             <div class="projects-grid">
 
-                <!-- Project 1: Baby Album Premium -->
+                <!-- Baby Album Premium -->
                 <div class="project-card reveal">
                     <div class="project-img">
                         <span class="img-placeholder"><i class="fas fa-baby"></i></span>
@@ -1251,7 +1145,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Instalment Management -->
+                <!-- Instalment Management System -->
                 <div class="project-card reveal">
                     <div class="project-img">
                         <span class="img-placeholder"><i class="fas fa-file-invoice-dollar"></i></span>
@@ -1268,10 +1162,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Portfolio / Art Studio -->
+                <!-- Art Studio Portfolio (image placeholder, using gradient) -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="PORTFOLIO.jpeg" alt="Art Studio Portfolio" style="width:100%; height:100%; object-fit:cover;" />
+                        <span class="img-placeholder"><i class="fas fa-paint-brush"></i></span>
                         <div class="overlay-icon"><i class="fas fa-external-link-alt"></i></div>
                     </div>
                     <div class="project-body">
@@ -1285,10 +1179,10 @@
                     </div>
                 </div>
 
-                <!-- Project 4: Crypto Management -->
+                <!-- Crypto Management -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="CRYPTO.jpeg" alt="Crypto Management" style="width:100%; height:100%; object-fit:cover;" />
+                        <span class="img-placeholder"><i class="fab fa-bitcoin"></i></span>
                         <div class="overlay-icon"><i class="fas fa-external-link-alt"></i></div>
                     </div>
                     <div class="project-body">
@@ -1302,10 +1196,10 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Al-Burhan Students Management -->
+                <!-- Al-Burhan Students Management -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="ALBURHAN.jpeg" alt="Al-Burhan Students Management" style="width:100%; height:100%; object-fit:cover;" />
+                        <span class="img-placeholder"><i class="fas fa-users"></i></span>
                         <div class="overlay-icon"><i class="fas fa-external-link-alt"></i></div>
                     </div>
                     <div class="project-body">
@@ -1323,86 +1217,22 @@
         </div>
     </section>
 
-    <!-- ===== CAROUSEL ===== -->
-    <!-- <section class="carousel-section" id="carousel">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label"><i class="fas fa-images"></i> Gallery</span>
-                <h2 class="section-title">Project <span class="highlight">Snapshots</span></h2>
-                <p class="section-subtitle">A glimpse of my work in action.</p>
-            </div>
-
-            <div class="carousel-wrap reveal">
-                <div class="carousel-track" id="carouselTrack">
-                    <!-- Slide 1 -->
-                    <!-- <div class="carousel-slide">
-                        <div class="carousel-img">
-                            <i class="fas fa-shopping-cart" style="opacity:0.4; font-size:5rem;"></i>
-                        </div>
-                        <div class="carousel-content">
-                            <h3>E‑Commerce Platform</h3>
-                            <p>ASP.NET Core MVC with product catalog, shopping cart, user authentication, and an admin dashboard for managing inventory and orders.</p>
-                        </div>
-                    </div>
-                    <!-- <!-- Slide 2 -->
-                    <!-- <div class="carousel-slide">
-                        <div class="carousel-img">
-                            <i class="fab fa-laravel" style="opacity:0.4; font-size:5rem;"></i>
-                        </div>
-                        <div class="carousel-content">
-                            <h3>Laravel E‑Commerce Store</h3> -->
-                            <!-- <p>Feature‑rich online store built with Laravel, including order management, payment gateway integration, and a responsive UI.</p> --> -->
-                        <!-- </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <!-- <div class="carousel-slide">
-                        <div class="carousel-img">
-                            <i class="fas fa-users" style="opacity:0.4; font-size:5rem;"></i>
-                        </div>
-                        <div class="carousel-content">
-                            <h3>Student Management System</h3>
-                            <p>ASP.NET Core solution for managing student records, attendance, grades, and generating reports for educators and administrators.</p>
-                        </div>
-                    </div> -->
-                    <!-- Slide 4 -->
-                    <!-- <div class="carousel-slide"> --> -->
-                        <!-- <div class="carousel-img">
-                            <i class="fas fa-graduation-cap" style="opacity:0.4; font-size:5rem;"></i>
-                        </div>
-                        <div class="carousel-content">
-                            <h3>Laravel Student Portal</h3>
-                            <p>Complete student management with enrollment, course allocation, fee tracking, and teacher dashboards built with Laravel.</p>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <button class="carousel-btn carousel-btn--prev" id="carouselPrev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-btn carousel-btn--next" id="carouselNext">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-            <div class="carousel-dots" id="carouselDots"></div>
-        </div> --> -->
-    <!-- </section> --> -->
-
     <!-- ===== CERTIFICATIONS ===== -->
     <section id="certifications">
         <div class="container">
             <div class="reveal">
                 <span class="section-label"><i class="fas fa-certificate"></i> Credentials</span>
-                <h2 class="section-title">Certifications &amp; <span class="highlight">Training</span></h2>
+                <h2 class="section-title">Certifications & <span class="highlight">Training</span></h2>
                 <p class="section-subtitle">Continuous learning and professional development.</p>
             </div>
             <div class="certs-grid">
                 <div class="cert-item reveal"><i class="fab fa-git-alt"></i><h5>Git Certified</h5><p>Version Control</p></div>
-                <div class="cert-item reveal"><i class="fab fa-js"></i><h5>JavaScript Certified</h5><p>Core &amp; ES6+</p></div>
+                <div class="cert-item reveal"><i class="fab fa-js"></i><h5>JavaScript Certified</h5><p>Core & ES6+</p></div>
                 <div class="cert-item reveal"><i class="fab fa-html5"></i><h5>HTML Certified</h5><p>Semantic Markup</p></div>
-                <div class="cert-item reveal"><i class="fab fa-css3-alt"></i><h5>CSS Certified</h5><p>Flexbox &amp; Grid</p></div>
+                <div class="cert-item reveal"><i class="fab fa-css3-alt"></i><h5>CSS Certified</h5><p>Flexbox & Grid</p></div>
                 <div class="cert-item reveal"><i class="fas fa-database"></i><h5>MySQL Certified</h5><p>Database Design</p></div>
                 <div class="cert-item reveal"><i class="fas fa-chalkboard-teacher"></i><h5>CS Trainer – Aptech</h5><p>Certified Instructor</p></div>
-                <div class="cert-item reveal"><i class="fas fa-brain"></i><h5>AI &amp; Data Science</h5><p>In Progress – SMIT</p></div>
+                <div class="cert-item reveal"><i class="fas fa-brain"></i><h5>AI & Data Science</h5><p>In Progress – SMIT</p></div>
             </div>
         </div>
     </section>
@@ -1418,7 +1248,7 @@
             <div class="contact-grid">
                 <div class="contact-info reveal">
                     <h4>Muhammad Haris</h4>
-                    <p>Software Developer &amp; IT Trainer</p>
+                    <p>Full‑Stack Developer & IT Trainer</p>
                     <div class="contact-item">
                         <i class="fas fa-phone-alt"></i>
                         <span>0323‑2019316</span>
@@ -1465,7 +1295,8 @@
     <footer>
         <div class="container">
             <div class="footer-bottom">
-                &copy; 2026 <span>Muhammad Haris</span>. Crafted with <i class="fas fa-heart" style="color: var(--secondary);"></i> in Karachi.
+                &copy; 2025 <span>Muhammad Haris</span>. Crafted with <i class="fas fa-heart" style="color: var(--secondary);"></i> in Karachi.
+                <br>Find me on <a href="https://github.com/MuhammadHaris12345" target="_blank" rel="noopener">GitHub</a>.
             </div>
         </div>
     </footer>
@@ -1583,73 +1414,7 @@
         })();
 
         // =============================================
-        // 3. CAROUSEL
-        // =============================================
-        (function carousel() {
-            const track = document.getElementById('carouselTrack');
-            if (!track) return;
-            const slides = track.querySelectorAll('.carousel-slide');
-            const prevBtn = document.getElementById('carouselPrev');
-            const nextBtn = document.getElementById('carouselNext');
-            const dotsContainer = document.getElementById('carouselDots');
-            let current = 0;
-            const total = slides.length;
-
-            // Create dots
-            for (let i = 0; i < total; i++) {
-                const dot = document.createElement('span');
-                if (i === 0) dot.classList.add('active');
-                dot.dataset.index = i;
-                dot.addEventListener('click', () => goTo(i));
-                dotsContainer.appendChild(dot);
-            }
-            const dots = dotsContainer.querySelectorAll('span');
-
-            function goTo(index) {
-                current = (index + total) % total;
-                track.style.transform = `translateX(-${current * 100}%)`;
-                dots.forEach((d, i) => d.classList.toggle('active', i === current));
-            }
-
-            function next() { goTo(current + 1); }
-
-            function prev() { goTo(current - 1); }
-
-            nextBtn.addEventListener('click', next);
-            prevBtn.addEventListener('click', prev);
-
-            // Auto-play (pause on hover)
-            let interval = setInterval(next, 5000);
-            const wrap = document.querySelector('.carousel-wrap');
-            wrap.addEventListener('mouseenter', () => clearInterval(interval));
-            wrap.addEventListener('mouseleave', () => {
-                interval = setInterval(next, 5000);
-            });
-
-            // Keyboard arrows
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowRight') next();
-                if (e.key === 'ArrowLeft') prev();
-            });
-
-            // Touch swipe support
-            let touchStartX = 0;
-            let touchEndX = 0;
-            wrap.addEventListener('touchstart', (e) => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-            wrap.addEventListener('touchend', (e) => {
-                touchEndX = e.changedTouches[0].screenX;
-                const diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 40) {
-                    if (diff > 0) next();
-                    else prev();
-                }
-            }, { passive: true });
-        })();
-
-        // =============================================
-        // 4. CONTACT FORM (simple feedback)
+        // 3. CONTACT FORM (simple feedback)
         // =============================================
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
